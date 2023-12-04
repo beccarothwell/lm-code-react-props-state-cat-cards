@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import CatCard from "./components/cat_card";
 import { useState } from "react";
 import Cat from "./data/cat";
 
