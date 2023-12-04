@@ -1,22 +1,19 @@
-import CatImage from "./cat_image";
-import { catImages } from "../data/cat-data";
+import CardImage from "./card_image";
 import Image from "../data/image";
 
-interface CatCardProps {
+interface CardProps {
   name: string;
   species: string;
   favFoods: Array<string>;
   birthYear: number;
-  catIndex: number;
   image?: Image;
 }
 
-const CatCard: React.FC<CatCardProps> = ({
+const Card: React.FC<CardProps> = ({
   name,
   species,
   favFoods,
   birthYear,
-  catIndex,
   image,
 }) => (
   <div className="card">
@@ -26,7 +23,7 @@ const CatCard: React.FC<CatCardProps> = ({
     <p className="card__text">Birth Year: {birthYear}</p>
 
     {image && (
-      <CatImage
+      <CardImage
         image={image.image}
         altText={image.altText}
         licenceType={image.licenceType}
@@ -38,4 +35,4 @@ const CatCard: React.FC<CatCardProps> = ({
   </div>
 );
 
-export default CatCard;
+export default Card;

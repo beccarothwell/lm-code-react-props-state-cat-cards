@@ -1,13 +1,14 @@
-interface CatImageProps {
+import Image from "../data/image";
+/*interface CardImageProps {
   image: string;
   altText: string;
   licenceType: string;
   licenceUrl: string;
   attributionName?: string;
   attributionUrl?: string;
-}
+}*/
 
-const CatImage: React.FC<CatImageProps> = ({
+const CardImage: React.FC<Image> = ({
   image,
   altText,
   licenceType,
@@ -28,4 +29,4 @@ const CatImage: React.FC<CatImageProps> = ({
   </>
 );
 
-export default CatImage;
+export default CardImage;

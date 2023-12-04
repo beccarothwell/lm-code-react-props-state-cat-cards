@@ -1,7 +1,3 @@
-export default interface Cat {
-  name: string;
-  species: string;
-  favFoods: Array<string>;
-  birthYear: number;
-  id?: string;
-}
+import Pet from "./pet";
+
+export default interface Cat extends Pet {}
