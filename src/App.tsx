@@ -8,6 +8,7 @@ import Cat from "./data/cat";
 import catData from "./data/cat-data";
 import Dog from "./data/dog";
 import dogData from "./data/dog-data";
+import AddPetForm from "./components/add_pet_form";
 
 function App(): JSX.Element {
   // JavaScript/TypeScript code can be inserted here!
@@ -23,6 +24,7 @@ function App(): JSX.Element {
       <Header catCount={catCount} dogCount={dogCount} />
 
       <main>
+        <AddPetForm setCats={setCats} />
         <div className="cards__wrapper">
           {cats.map((cat) => (
             <Card
