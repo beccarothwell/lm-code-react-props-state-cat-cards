@@ -13,7 +13,7 @@ import AddPetForm from "./components/add_pet_form";
 function App(): JSX.Element {
   // JavaScript/TypeScript code can be inserted here!
   const [cats, setCats] = useState<Array<Cat>>(catData);
-  const [dogs, setDogs] = useState<Array<Cat>>(dogData);
+  const [dogs, setDogs] = useState<Array<Dog>>(dogData);
 
   const catCount = cats.length;
   const dogCount = dogs.length;
